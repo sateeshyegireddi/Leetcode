@@ -26,7 +26,7 @@ func calculateTime(keyboard: String, word: String) -> Int {
 /******************************  APPROACH 2 ******************************/
 /*************************************************************************/
 
-//Time Complexity - O(n2)
+//Time Complexity - O(n)
 //Space Complexity - O(1)
 
 func calculateTime(keyboard: String, word: String) -> Int {
