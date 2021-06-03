@@ -3,6 +3,9 @@
 /******************************  APPROACH 1 ******************************/
 /*************************************************************************/
 
+// Time Complexity -- O(n2)
+// Space Complexity -- O(1)
+
 func moveZerosIndexBreak(_ array: inout [Int]) {
     var j = 0
     for i in 0..<array.count {
@@ -14,12 +17,12 @@ func moveZerosIndexBreak(_ array: inout [Int]) {
     }
 }
 
-// Time Complexity -- O(n2)
-// Space Complexity -- O(1)
-
 /*************************************************************************/
 /******************************  APPROACH 2 ******************************/
 /*************************************************************************/
+
+// Time Complexity -- O(n)
+// Space Complexity -- O(n)
 
 func moveZerosFilter(_ array: inout [Int]) {
     var nonZeros = array.filter { $0 != 0 }
@@ -29,12 +32,12 @@ func moveZerosFilter(_ array: inout [Int]) {
     array = nonZeros
 }
 
-// Time Complexity -- O(n)
-// Space Complexity -- O(n)
-
 /*************************************************************************/
 /******************************  APPROACH 3 ******************************/
 /*************************************************************************/
+
+// Time Complexity -- O(n)
+// Space Complexity -- O(1)
 
 func moveZerosNonZeroIndexes(_ array: inout [Int]) {
     var nonZeroIndex = 0
@@ -47,5 +50,21 @@ func moveZerosNonZeroIndexes(_ array: inout [Int]) {
     }
 }
 
+/*************************************************************************/
+/******************************  APPROACH 3 ******************************/
+/*************************************************************************/
+
 // Time Complexity -- O(n)
 // Space Complexity -- O(1)
+
+func moveZerosSwapNonZero(_ nums: inout [Int]) {
+    var i = 0
+    var j = 0
+    while j < nums.count {
+        if nums[j] != 0 {
+            nums.swapAt(i, j)
+            i += 1
+        }
+        j += 1
+    }
+}
