@@ -1,3 +1,7 @@
+
+// Time Complexity  - O(n)
+// Space Complexity - O(n)
+
 func sortedSquares(_ nums: [Int]) -> [Int] {
     var output = Array<Int>(repeating: 0, count: nums.count)
     var low = 0

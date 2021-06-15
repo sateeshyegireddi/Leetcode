@@ -1,4 +1,7 @@
 
+// Time Complexity  - O(n)
+// Space Complexity - O(1)
+
 func maxSubArray(_ array: [Int]) -> Int {
     
     // If all the numbers are -ve, return max of -ve

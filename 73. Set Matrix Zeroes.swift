@@ -3,6 +3,9 @@
 /******************************  APPROACH 1 ******************************/
 /*************************************************************************/
 
+// Time Complexity  - O(m * n)
+// Space Complexity - O(m * n)
+
 func setZeroes(_ matrix: inout [[Int]]) {
     var rows = input.count
     var columns = input[0].count
@@ -31,6 +34,9 @@ func setZeroes(_ matrix: inout [[Int]]) {
 /*************************************************************************/
 /******************************  APPROACH 2 ******************************/
 /*************************************************************************/
+
+// Time Complexity  - O(m * n)
+// Space Complexity - O(1)
 
 func setZeroes(_ matrix: inout [[Int]]) {
     let rows = matrix.count

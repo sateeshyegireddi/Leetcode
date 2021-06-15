@@ -3,6 +3,9 @@
 /******************************  APPROACH 1 ******************************/
 /*************************************************************************/
 
+// Time Complexity  - O(nlogn)
+// Space Complexity - O(1)
+
 func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
     for i in 0..<numbers.count {
         let compliment = target - numbers[i]
@@ -35,6 +38,9 @@ func binarySearch(_ numbers: [Int], target: Int) -> Int {
 /*************************************************************************/
 /******************************  APPROACH 2 ******************************/
 /*************************************************************************/
+
+// Time Complexity  - O(n)
+// Space Complexity - O(1)
 
 func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
     var low = 0
